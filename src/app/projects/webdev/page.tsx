@@ -10,7 +10,7 @@ function page() {
 
         <BackgroundBoxesDemo/>
         <div className="flex justify-around lg:flex-row min-[320px]:flex-col">
-        {data.map(ele => <Card name={ele.name} about={ele.about} img={ele.img} />)}
+        {data.map(ele => <Card name={ele.name} key={ele.name} about={ele.about} img={ele.img} />)}
         </div>
     </div>
   )
